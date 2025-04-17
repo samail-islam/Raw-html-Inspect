@@ -21,7 +21,7 @@ while True :
    response = session.get(url, headers=headers)
 
    print(response.status_code)
-   print(response.text[:50000])  # Print the first 500 characters of the page
+   print(response.text[:500])  # Print the first 500 characters of the page( you can adjust it according to how much characters you want to see.)
   except:
     print("Erorr")
   
